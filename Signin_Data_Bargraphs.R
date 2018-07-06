@@ -242,7 +242,7 @@ rl_guests # exported to .tiff 1200 by 700
 
 # Subset data for self-reported beginners only
 beginners_only <- subset(rl_repeats,rl_repeats$R_Level=="Beginner")
-beginners_only
+beginners_only # double check
 
 # Generate figure
 rl_beginners <- ggplot(beginners_only %>% group_by(Date) %>% 
